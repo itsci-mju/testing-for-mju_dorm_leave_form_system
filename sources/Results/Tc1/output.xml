@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20220926 15:55:45.172" rpa="false" schemaversion="3">
+<suite id="s1" name="TC1" source="D:\pycharm\test\TestCase\TC1.robot">
+<test id="s1-t1" name="Openweb" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.google.co.th</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220926 15:55:45.893" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
+<status status="PASS" starttime="20220926 15:55:45.892" endtime="20220926 15:55:50.437"/>
+</kw>
+<status status="PASS" starttime="20220926 15:55:45.890" endtime="20220926 15:55:50.438"/>
+</test>
+<status status="PASS" starttime="20220926 15:55:45.177" endtime="20220926 15:55:50.441"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
