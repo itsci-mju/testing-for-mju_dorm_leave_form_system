@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221021 18:19:18.231" rpa="false" schemaversion="3">
+<suite id="s1" name="TC02 Add Leaving Form" source="D:\pycharm\test\TestCase\TC02_Add_Leaving_Form.robot">
+<test id="s1-t1" name="TC02_Add_Leaving_Form" line="8">
+<kw name="Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Login_URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221021 18:19:20.634" level="INFO">Opening browser 'chrome' to base url 'http://localhost:13385/MJUDormLeaveForm/'.</msg>
+<status status="PASS" starttime="20221021 18:19:20.634" endtime="20221021 18:19:29.815"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221021 18:19:29.815" endtime="20221021 18:19:29.945"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221021 18:19:29.946" endtime="20221021 18:19:29.946"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:29.947" level="INFO">Clicking element '//a[contains(text(),'เข้าสู่ระบบ')]'.</msg>
+<status status="PASS" starttime="20221021 18:19:29.946" endtime="20221021 18:19:44.763"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${student}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:44.764" level="INFO">Clicking element '//label[contains(text(),'นักศึกษา')]'.</msg>
+<status status="PASS" starttime="20221021 18:19:44.763" endtime="20221021 18:19:45.829"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${stu_user}</arg>
+<arg>mju6204106306</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:45.829" level="INFO">Typing text 'mju6204106306' into text field '//input[@id='TextBoxLoginName']'.</msg>
+<status status="PASS" starttime="20221021 18:19:45.829" endtime="20221021 18:19:47.470"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${stu_pass}</arg>
+<arg>MJU@11022001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:47.471" level="INFO">Typing text 'MJU@11022001' into text field '//input[@id='TextBoxPassword']'.</msg>
+<status status="PASS" starttime="20221021 18:19:47.470" endtime="20221021 18:19:49.072"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:49.072" level="INFO">Clicking element '//a[@id='LinkButtonLogin']'.</msg>
+<status status="PASS" starttime="20221021 18:19:49.072" endtime="20221021 18:19:50.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221021 18:19:53.136" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221021 18:19:50.135" endtime="20221021 18:19:53.136"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Addfrom_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221021 18:19:53.137" level="INFO">Opening url 'https://itsci.mju.ac.th/MJUDormLeaveForm/addleaveweek'</msg>
+<status status="PASS" starttime="20221021 18:19:53.136" endtime="20221021 18:19:53.852"/>
+</kw>
+<status status="PASS" starttime="20221021 18:19:20.633" endtime="20221021 18:19:53.852"/>
+</kw>
+<kw name="Add Leaving">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_addLeaving}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:53.853" level="INFO">Clicking element '//div[contains(text(),'ลาประจำสัปดาห์')]'.</msg>
+<status status="PASS" starttime="20221021 18:19:53.853" endtime="20221021 18:19:55.014"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:55.014" level="INFO">Clicking element '//input[@id='demo11']'.</msg>
+<status status="PASS" starttime="20221021 18:19:55.014" endtime="20221021 18:19:56.075"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:56.076" level="INFO">Clicking element '//input[@id='demo11']'.</msg>
+<status status="PASS" starttime="20221021 18:19:56.075" endtime="20221021 18:19:57.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_Adddate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:57.106" level="INFO">Clicking element '//*[@id="month-1-demo11"]/tbody/tr[3]'.</msg>
+<status status="PASS" starttime="20221021 18:19:57.106" endtime="20221021 18:19:58.158"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_detailleave}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 18:19:58.158" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20221021 18:19:58.158" endtime="20221021 18:19:58.158"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cilck_Ok}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.158" endtime="20221021 18:19:58.159"/>
+</kw>
+<status status="FAIL" starttime="20221021 18:19:53.852" endtime="20221021 18:19:58.159"/>
+</kw>
+<kw name="Start Video Recording" library="ScreenCapLibrary">
+<arg>alias=None</arg>
+<arg>name=TC02_Add_Leaving</arg>
+<arg>fps=None</arg>
+<arg>size_percentage=1</arg>
+<arg>embed=True</arg>
+<arg>embed_width=100px</arg>
+<arg>monitor=1</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.160" endtime="20221021 18:19:58.160"/>
+</kw>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>TestData//TC02_Add_Leaving_Form.xlsx</arg>
+<arg>doc_id=Sheet1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.160" endtime="20221021 18:19:58.160"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<var>${excel}</var>
+<arg>Sheet1</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.160" endtime="20221021 18:19:58.160"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>2</value>
+<value>${excel.max_row+1}</value>
+<iter>
+<var name="${i}"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Addfrom_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.161" endtime="20221021 18:19:58.161"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${tcid}</var>
+<arg>'${excel.cell(${i},1).value}'=='None'</arg>
+<arg>${Empty}</arg>
+<arg>${excel.cell(${i},1).value}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.161" endtime="20221021 18:19:58.161"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${testcaseData}</arg>
+<arg>${tcid}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.161" endtime="20221021 18:19:58.161"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${user}</var>
+<arg>'${excel.cell(${i},2).value}'=='None'</arg>
+<arg>${Empty}</arg>
+<arg>${excel.cell(${i},2).value}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.162" endtime="20221021 18:19:58.162"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${pass}</var>
+<arg>'${excel.cell(${i},3).value}'=='None'</arg>
+<arg>${Empty}</arg>
+<arg>${excel.cell(${i},3).value}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.162" endtime="20221021 18:19:58.162"/>
+</kw>
+<kw name="Loging Page">
+<arg>${user}</arg>
+<arg>${pass}</arg>
+<status status="NOT RUN" starttime="20221021 18:19:58.166" endtime="20221021 18:19:58.166"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${Status_1}</var>
+<var>${message_1}</var>
+<arg>${i}&lt;=${excel.max_row}</arg>
+<arg>Check Error page</arg>
+<arg>${excel.cell(${i},4).value}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.166" endtime="20221021 18:19:58.167"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${Status_Actual}</var>
+<arg>${i}&lt;=${excel.max_row}</arg>
+<arg>${Status_1}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.167" endtime="20221021 18:19:58.167"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${Status}</var>
+<arg>'${Status_Actual}' == 'True'</arg>
+<arg>PASS</arg>
+<arg>FAIL</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.167" endtime="20221021 18:19:58.167"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<arg>${EXECDIR}/Results/TC02_Add_Leaving/Screenshot/${testcaseData}.png</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.167" endtime="20221021 18:19:58.167"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${get_message}</var>
+<arg>${i}&lt;=${excel.max_row}</arg>
+<arg>${message_1}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.167" endtime="20221021 18:19:58.167"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${Error}</var>
+<arg>'${Status}' == 'FAIL'</arg>
+<arg>Error</arg>
+<arg>No Error</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.167" endtime="20221021 18:19:58.167"/>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${Suggestion}</var>
+<arg>'${Status}' == 'FAIL'</arg>
+<arg>ควรมีการแจ้งเตือนให้ผู้ใช้งาน "${excel.cell(${i},4).value}"</arg>
+<arg>-</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.168" endtime="20221021 18:19:58.168"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>${i}</arg>
+<arg>10</arg>
+<arg>value=${get_message}</arg>
+<arg>sheet_name=Sheet1</arg>
+<doc>Writes value to the cell.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.168" endtime="20221021 18:19:58.168"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>${i}</arg>
+<arg>11</arg>
+<arg>value=${Status}</arg>
+<arg>sheet_name=Sheet1</arg>
+<doc>Writes value to the cell.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.168" endtime="20221021 18:19:58.168"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>${i}</arg>
+<arg>12</arg>
+<arg>value=${Error}</arg>
+<arg>sheet_name=Sheet1</arg>
+<doc>Writes value to the cell.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.169" endtime="20221021 18:19:58.169"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>${i}</arg>
+<arg>13</arg>
+<arg>value=${Suggestion}</arg>
+<arg>sheet_name=Sheet1</arg>
+<doc>Writes value to the cell.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.169" endtime="20221021 18:19:58.169"/>
+</kw>
+<status status="NOT RUN" starttime="20221021 18:19:58.161" endtime="20221021 18:19:58.169"/>
+</iter>
+<status status="NOT RUN" starttime="20221021 18:19:58.161" endtime="20221021 18:19:58.169"/>
+</for>
+<kw name="Save Excel Document" library="ExcelLibrary">
+<arg>Results/WriteExcel/TC02_Add_Leaving_Form1.xlsx</arg>
+<doc>Saves the current document to disk.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.169" endtime="20221021 18:19:58.169"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.169" endtime="20221021 18:19:58.170"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.170" endtime="20221021 18:19:58.170"/>
+</kw>
+<kw name="Stop Video Recording" library="ScreenCapLibrary">
+<arg>alias=None</arg>
+<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
+``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
+alias all of them will be closed. If ``embed`` argument was set to
+``True`` the video will be displayed in the log file.
+Furthermore, if the ``save_to_disk`` parameter is set to ``False``, the video will be embedded and available in
+the log file only.</doc>
+<status status="NOT RUN" starttime="20221021 18:19:58.170" endtime="20221021 18:19:58.170"/>
+</kw>
+<status status="FAIL" starttime="20221021 18:19:20.632" endtime="20221021 18:19:58.171">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20221021 18:19:18.235" endtime="20221021 18:19:58.173"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC02 Add Leaving Form">TC02 Add Leaving Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
